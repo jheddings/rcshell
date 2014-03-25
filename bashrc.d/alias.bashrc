@@ -17,5 +17,13 @@ alias tip='/usr/bin/sudo minicom -o'
 
 alias bk='/bin/echo && /bin/echo && /bin/echo ================================================================================'
 
+# TODO check for gvim, too
 alias g='mvim'
+
+# TODO 'e' should check for a running vim server and use that, else launch vim
+#alias e='vim --servername VIM --remote'
 alias e='vim'
+
+# create a simple web server in the current directory
+alias wserv='python -m SimpleHTTPServer 8008'
+
