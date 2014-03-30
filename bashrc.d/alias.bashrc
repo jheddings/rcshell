@@ -17,8 +17,7 @@ alias tip='/usr/bin/sudo minicom -o'
 
 alias bk='/bin/echo && /bin/echo && /bin/echo ================================================================================'
 
-# TODO check for gvim, too
-alias g='mvim'
+alias g='gvim'
 
 # TODO 'e' should check for a running vim server and use that, else launch vim
 #alias e='vim --servername VIM --remote'
