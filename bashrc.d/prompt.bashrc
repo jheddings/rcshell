@@ -36,14 +36,14 @@ txtrst='\e[0m'     # Text Reset
 
 case $TERM in
   xterm*)
-    PS1="[\[$txtcyn\]\h\[$txtrst\]"
-    PS1="$PS1:\[$txtgrn\]\w\[$txtrst\]]\n"
-    PS1="$PS1\[$txtcyn\]\u\[$txtrst\]"
-    PS1="$PS1\[$txtylw\]\$\[$txtrst\] "
+    PS1="[\[$txtcyn\]"'\u'"\[$txtrst\]"
+    PS1="$PS1@\[$txtcyn\]"'\h'"\[$txtrst\]"
+    PS1="$PS1:\[$txtwht\]"'\w'"\[$txtrst\]]\n"
+    PS1="$PS1\[$txtylw\]"'\$'"\[$txtrst\] "
     ;;
 
   *)
-    PS1="\h:\W \u\$ "
+    PS1='\h:\W \u\$ '
     ;;
 esac
 
