@@ -1,7 +1,5 @@
 # $Id: prompt.bashrc 4 2009-01-22 15:42:16Z jheddings $
 
-# default prompt - \h:\W \u\$
-
 txtblk='\e[0;30m'  # Black - Regular
 txtred='\e[0;31m'  # Red
 txtgrn='\e[0;32m'  # Green
@@ -36,23 +34,18 @@ bakcyn='\e[46m'    # Cyan
 bakwht='\e[47m'    # White
 txtrst='\e[0m'     # Text Reset
 
-PS1=""
-
 case $TERM in
   xterm*)
-    #PS1="$PS1[\[$txtgrn\]\w\[$txtrst\]]\n"
+    PS1="[\[$txtcyn\]\h\[$txtrst\]"
+    PS1="$PS1:\[$txtgrn\]\w\[$txtrst\]]\n"
     PS1="$PS1\[$txtcyn\]\u\[$txtrst\]"
-    PS1="$PS1@\[$txtcyn\]\h\[$txtrst\]"
-    PS1="$PS1 \[$txtwht\]\W\[$txtrst\]"
     PS1="$PS1\[$txtylw\]\$\[$txtrst\] "
     ;;
 
   *)
-    PS1="$PS1\W\$ "
+    PS1="\h:\W \u\$ "
     ;;
 esac
-
-# put directory on top line
 
 ## add a visual indicator for previous command status
 #PS1="$PS1\$(if [[ \$? == 0 ]]; then echo \"\[$bldgrn\]\342\234\223\"; else echo \"\[$bldred\]\342\234\227\"; fi)\[$txtrst\] "
