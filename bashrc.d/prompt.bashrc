@@ -1,5 +1,3 @@
-# $Id: prompt.bashrc 4 2009-01-22 15:42:16Z jheddings $
-
 txtblk='\e[0;30m'  # Black - Regular
 txtred='\e[0;31m'  # Red
 txtgrn='\e[0;32m'  # Green

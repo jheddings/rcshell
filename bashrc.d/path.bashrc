@@ -1,5 +1,3 @@
-# $Id: path.bashrc 1 2008-09-08 20:49:51Z jheddings $
-
 # make sure /usr/local is first in PATH
 export PATH="/usr/local/bin:${PATH}"
 

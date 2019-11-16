@@ -1,5 +1,3 @@
-# $Id: cdp.bashrc 8 2009-05-27 19:55:58Z jheddings $
-
 [ -z "$CDP_BASE" ] && export CDP_BASE=$HOME
 [ -z "$CDP_DEPTH" ] && export CDP_DEPTH=1
 
