@@ -3,9 +3,6 @@
 # to use this configuration, source this file from your .bashrc:
 # . $HOME/.rcshell/bashrc
 
-# source global definitions (TODO make optional?)
-[ -f /etc/bashrc ] && . /etc/bashrc
-
 export CDP_BASE="$HOME/Projects"
 
 # TODO make this folder dynamic from this file
